@@ -21,17 +21,14 @@ body {
     flex-direction: row;
     align-items: center;
     position: fixed;
-    min-height: 5vh;
-    max-height: 10vh;
-    height: auto;
-    overflow: hidden;
+    height: 65px;
     z-index: 1;
     width: 100%;
     border: none;
     background-color: #212121;
     box-shadow: 0 0 5px #5c5c5c;
     /* box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12) */
-}
+    }
 
 .nav-container {
     display: flex;
@@ -47,7 +44,7 @@ body {
     align-items: center;
     font-size: 1.5em;
 }
-
+    
 .header a {
     text-decoration: none;
     color: white;
@@ -69,7 +66,7 @@ body {
         display: none;
     }
 }
-
+    
 .nav-item {
     padding-right: 20px;
 }
@@ -142,7 +139,7 @@ body {
 .menu-icon.menu-icon-active .menu-icon-line {
     background-color: transparent;
 }
-
+    
 .menu-icon.menu-icon-active .menu-icon-line::before {
     transform: rotate(45deg);
     top: 0;
@@ -186,6 +183,7 @@ body {
     font-size: 25px;
     font-weight: 800;
     margin-bottom: 30px;
+    margin-top: 9px;
     color: white;
 }
 
@@ -263,16 +261,12 @@ hr {
     border: 1px solid $primary-color;
     background-color: $primary-color;
     display: flex;
-    /* flex-direction: row;
-    align-items: flex-start;*/
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 10%;
 }
 
 .card-style1 {
-    /* display: flex;
-    flex-direction: column; */
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 6%;
@@ -292,7 +286,8 @@ hr {
 
 .title {
     color: white;
-    margin-left: 5%;
+    padding-left: 5%;
+    padding-right: 3%;
 }
 
 .pluses {
@@ -318,16 +313,12 @@ hr {
     border: 1px solid $primary-color;
     background-color: $primary-color;
     display: flex;
-    /* flex-direction: row;
-    align-items: flex-start; */
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 7%;
 }
 
 .card-style3 {
-    /* display: flex;
-    flex-direction: column; */
     padding-top: 5%;
     padding-bottom: 5%;
     padding-left: 6%;
@@ -373,6 +364,7 @@ a.aboutus {
 .abot {
     color: white;
     padding-left: 30px;
+    padding-right: 10px;
 }
 
 .about1 {
@@ -387,17 +379,17 @@ a.aboutus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 3%;
     margin-left: 2%;
     margin-right: 2%;
     
 }
 
-.aboutlink{
-    text-decoration: underline;
-    font-size: 1.1em;
-}
+// .aboutlink{ 
+//     text-decoration: underline;
+//     font-size: 1.1em;
+// }
 
 .images {
     width: 80%;
@@ -429,6 +421,10 @@ p {
 
 .box {
     padding-top: 5%;
+}
+
+.box1 {
+    padding-top: 2%;
 }
 
 input[type=text],
@@ -496,6 +492,9 @@ input[type=submit].reg-submit {
 
 @media screen and (max-width: 590px) {
 
+    h1{
+        text-align: center;
+    }
     .title {
         text-align: center;
     }
@@ -509,34 +508,43 @@ input[type=submit].reg-submit {
     }
 
     .text {
-        align-items: center;
+        padding-top: 0;
     }
 
     h2 {
         text-align: center;
     }
 
-    .content1 {
-        border: 1px solid $primary-color;
-        background-color: $primary-color;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
-    }
+  .content1 {
+      border: 1px solid $primary-color;
+      background-color: $primary-color;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 3%;
+      margin-right: 5%;
+      margin-bottom: 5%;
+  }
+
+  .card-style1 {
+    padding-left: 0%;
+}
 
     .content3 {
-        border: 1px solid $primary-color;
-        background-color: $primary-color;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 7%;
+         border: 1px solid $primary-color;
+         background-color: $primary-color;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-left: 5%;
+         margin-right: 5%;
+         margin-bottom: 7%;
     }
+
+    
+  .card-style3 {
+    padding-left: 0%;
+}
 
     .images {
         width: 300px;
@@ -545,37 +553,37 @@ input[type=submit].reg-submit {
 
 @media screen and (max-width: 400px) {
 
-    .text {
-        align-items: center;
+    h1{
+        text-align: center;
     }
 
     h2 {
         text-align: center;
     }
 
-    .content1 {
-        border: 1px solid $primary-color;
-        background-color: $primary-color;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 5%;
-    }
+     .content1 {
+         border: 1px solid $primary-color;
+         background-color: $primary-color;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-left: 5%;
+         margin-right: 5%;
+         margin-bottom: 5%;
+     }
 
-    .content3 {
-        border: 1px solid $primary-color;
-        background-color: $primary-color;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 7%;
+     .content3 {
+         border: 1px solid $primary-color;
+         background-color: $primary-color;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-left: 5%;
+         margin-right: 5%;
+         margin-bottom: 7%;
     }
 
     .images {
         width: 100%;
     }
-}
+} 
